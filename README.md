@@ -4,15 +4,16 @@
 
 I build grounded AI applications with **Java, Spring Boot, LLMs, RAG, and Agent workflows**.
 
-Currently building **JianMiao 简喵**, a JD-grounded AI career preparation platform that connects resume scoring, JD diagnosis, evidence-grounded rewriting, Guard Trail, interview preparation, cover letter generation, and job-session workbench into one auditable workflow.
+Currently building **JianMiao 简喵**, a **job-description-grounded AI career preparation platform** that connects resume scoring, job description diagnosis, evidence-grounded rewriting, Guard Trail, interview preparation, cover letter generation, and job-session workbench into one auditable workflow.
 
-## What I Focus On
+## Focus
 
 - Java / Spring Boot backend engineering
 - LLM application engineering
 - RAG and evidence-grounded generation
 - Agent workflow design
 - Structured output validation
+- Anti-hallucination guardrails
 - AI product architecture
 - Career-tech product development
 
@@ -20,21 +21,36 @@ Currently building **JianMiao 简喵**, a JD-grounded AI career preparation plat
 
 ### JianMiao 简喵
 
-**A JD-grounded AI career preparation platform.**
+**A job-description-grounded AI career preparation platform.**
 
-JianMiao is not a generic AI resume builder. It focuses on a more specific workflow:
+JianMiao is not a generic AI resume builder. It is designed around a more specific workflow:
 
-> saved resume version → target JD → JD diagnosis → evidence-grounded rewriting → Guard Trail → interview preparation → cover letter → job-specific material package
+```text
+saved resume version
+→ target job description
+→ job description diagnosis
+→ candidate evidence indexing
+→ evidence-grounded resume rewriting
+→ Guard Trail
+→ interview preparation
+→ cover letter
+→ job-specific material package
+```
 
-The core goal is to help users create job-specific application materials that are more factual, traceable, and interview-defensible.
+The core goal is to help users create job-specific application materials that are more **factual, traceable, and interview-defensible**.
+
+Instead of only making resume text look better, JianMiao focuses on a stricter question:
+
+> Which parts of the AI-generated content are actually supported by the candidate's existing experience?
 
 Key modules:
 
 - Resume scoring
-- JD diagnosis
+- Job description diagnosis
 - Candidate evidence indexing
-- JD-tailored resume rewriting
-- Guard Trail for unsupported claims
+- Job-specific resume rewriting
+- Guard Trail for unsupported or risky claims
+- Evidence-constrained bullet rewriting
 - Grounded Interview Pack
 - Evidence-constrained cover letter generation
 - JobOptimizationSession Workbench
@@ -51,24 +67,26 @@ Focus areas:
 - Agent-style task orchestration
 - AI application engineering
 
-## Writing
+## Engineering Interests
 
-I write about AI application development, Java backend engineering, LLM products, RAG, Agent workflows, and the process of building JianMiao.
+I am interested in the engineering layer between raw LLM capability and real user-facing products.
 
-- Blog: https://yanxai.com
-- GitHub: https://github.com/RyanCoreAI
-
-## Current Direction
-
-I am focused on building practical AI applications that move beyond simple text generation.
-
-My long-term interest is in:
+My current direction includes:
 
 - grounded generation
 - evidence chains
+- claim verification
+- structured output validation
 - anti-hallucination design
 - workflow-level AI products
 - reliable AI systems for real users
+
+## Writing
+
+I write about AI application development, Java backend engineering, LLM products, RAG, Agent workflows, product architecture, and the process of building JianMiao.
+
+- Blog: https://yanxai.com
+- GitHub: https://github.com/RyanCoreAI
 
 ---
 
@@ -76,9 +94,9 @@ My long-term interest is in:
 
 我是 Ryan，方向是 **AI 应用开发 / Java 后端 / LLM / RAG / Agent 工作流**。
 
-我正在做 **简喵**：一个岗位定制型 AI 求职准备平台。
+我正在做 **简喵**：一个 **岗位描述（JD）驱动的 AI 求职准备平台**。
 
-简喵不是普通 AI 简历模板工具，而是围绕一个具体 JD，把简历体检、JD 匹配诊断、证据约束改写、Guard Trail、面试准备包、求职信生成和岗位材料工作台连接成一个闭环。
+简喵不是普通 AI 简历模板工具，也不是单纯的 ATS 打分玩具。它围绕一个具体岗位描述，把简历体检、岗位匹配诊断、候选人证据链、证据约束改写、Guard Trail、面试准备包、求职信生成和岗位材料工作台连接成一个闭环。
 
 我更关注的是：如何把 AI 从“能生成文本”推进到“可验证、可追溯、可落地的工程产品”。
 
